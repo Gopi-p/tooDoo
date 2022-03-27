@@ -1,5 +1,5 @@
 name: toodoo
-description: A new Flutter project.
+description: A Full fledged task manager application using Flutter + Firebase + Coffee.
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 

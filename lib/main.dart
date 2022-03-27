@@ -11,7 +11,7 @@ class TooDoo extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        body: InkWell(
+        body: Center(
           child: Text('Hello, world!'),
         ),
       ),

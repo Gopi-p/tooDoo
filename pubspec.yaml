@@ -1,5 +1,5 @@
 name: toodoo
-description: A Full fledged task manager application using Flutter + Firebase + Coffee.
+description: A full fledged task manager application built using flutter + firebase + coffee
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
@@ -12,8 +12,6 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  # lottie: ^1.2.1
-  # intl: ^0.17.0
   # flutter_native_splash: ^2.0.1+1
 
 # Uncomment the following lines if you wish to generate splash screens
@@ -32,8 +30,6 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
-  # build_runner: ^2.1.4
-  # json_serializable: ^5.0.2
 
 flutter:
   uses-material-design: true

@@ -12,6 +12,9 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  firebase_core: ^1.13.1 # Core
+  cloud_firestore: ^3.1.10 # Storage
+  firebase_auth: ^3.3.11 # Authentication
   # flutter_native_splash: ^2.0.1+1
 
 # Uncomment the following lines if you wish to generate splash screens

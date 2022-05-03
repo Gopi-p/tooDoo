@@ -20,6 +20,26 @@ class _$AppRouter extends RootStackRouter {
     HomeRoute.name: (routeData) {
       return MaterialPageX<dynamic>(routeData: routeData, child: const Home());
     },
+    PreviewTaskRoute.name: (routeData) {
+      return MaterialPageX<dynamic>(
+          routeData: routeData, child: const PreviewTask());
+    },
+    ViewAllTasksRoute.name: (routeData) {
+      return MaterialPageX<dynamic>(
+          routeData: routeData, child: const ViewAllTasks());
+    },
+    ViewAllCategoriesRoute.name: (routeData) {
+      return MaterialPageX<dynamic>(
+          routeData: routeData, child: const ViewAllCategories());
+    },
+    CreateOrEditTaskRoute.name: (routeData) {
+      return MaterialPageX<dynamic>(
+          routeData: routeData, child: const CreateOrEditTask());
+    },
+    CreateOrEditCategoryRoute.name: (routeData) {
+      return MaterialPageX<dynamic>(
+          routeData: routeData, child: const CreateOrEditCategory());
+    },
     UnknownRouteRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
           routeData: routeData, child: const UnknownRoute());
@@ -31,6 +51,12 @@ class _$AppRouter extends RootStackRouter {
         RouteConfig('/#redirect',
             path: '/', redirectTo: '/home', fullMatch: true),
         RouteConfig(HomeRoute.name, path: '/home'),
+        RouteConfig(PreviewTaskRoute.name, path: '/PreviewTask'),
+        RouteConfig(ViewAllTasksRoute.name, path: '/ViewAllTasks'),
+        RouteConfig(ViewAllCategoriesRoute.name, path: '/ViewAllCategories'),
+        RouteConfig(CreateOrEditTaskRoute.name, path: '/CreateOrEditTask'),
+        RouteConfig(CreateOrEditCategoryRoute.name,
+            path: '/CreateOrEditCategory'),
         RouteConfig(UnknownRouteRoute.name, path: '*')
       ];
 }
@@ -41,6 +67,50 @@ class HomeRoute extends PageRouteInfo<void> {
   const HomeRoute() : super(HomeRoute.name, path: '/home');
 
   static const String name = 'HomeRoute';
+}
+
+/// generated route for
+/// [PreviewTask]
+class PreviewTaskRoute extends PageRouteInfo<void> {
+  const PreviewTaskRoute() : super(PreviewTaskRoute.name, path: '/PreviewTask');
+
+  static const String name = 'PreviewTaskRoute';
+}
+
+/// generated route for
+/// [ViewAllTasks]
+class ViewAllTasksRoute extends PageRouteInfo<void> {
+  const ViewAllTasksRoute()
+      : super(ViewAllTasksRoute.name, path: '/ViewAllTasks');
+
+  static const String name = 'ViewAllTasksRoute';
+}
+
+/// generated route for
+/// [ViewAllCategories]
+class ViewAllCategoriesRoute extends PageRouteInfo<void> {
+  const ViewAllCategoriesRoute()
+      : super(ViewAllCategoriesRoute.name, path: '/ViewAllCategories');
+
+  static const String name = 'ViewAllCategoriesRoute';
+}
+
+/// generated route for
+/// [CreateOrEditTask]
+class CreateOrEditTaskRoute extends PageRouteInfo<void> {
+  const CreateOrEditTaskRoute()
+      : super(CreateOrEditTaskRoute.name, path: '/CreateOrEditTask');
+
+  static const String name = 'CreateOrEditTaskRoute';
+}
+
+/// generated route for
+/// [CreateOrEditCategory]
+class CreateOrEditCategoryRoute extends PageRouteInfo<void> {
+  const CreateOrEditCategoryRoute()
+      : super(CreateOrEditCategoryRoute.name, path: '/CreateOrEditCategory');
+
+  static const String name = 'CreateOrEditCategoryRoute';
 }
 
 /// generated route for

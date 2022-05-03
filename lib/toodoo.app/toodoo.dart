@@ -11,6 +11,7 @@ class TooDoo extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: APP_NAME,
+      theme: ThemeData(fontFamily: PRIMARY_FONT_FAMILY),
       debugShowCheckedModeBanner: false,
       routerDelegate: _appRouter.delegate(),
       routeInformationParser: _appRouter.defaultRouteParser(),

@@ -1,6 +1,5 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:toodoo/toodoo.app/routes/app_router.dart';
+import 'package:toodoo/shared.module/widgets/button.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -17,18 +16,10 @@ class Home extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const SizedBox(width: double.infinity),
-          ElevatedButton(
-            child: const Text('View All Tasks'),
-            onPressed: () {
-              context.router.push(const ViewAllTasksRoute());
-            },
-          ),
-          const SizedBox(height: 24),
-          ElevatedButton(
-            child: const Text('View All Categories'),
-            onPressed: () {
-              context.router.push(const ViewAllCategoriesRoute());
-            },
+          Button(
+            icon: Icons.edit,
+            text: "Edit",
+            onPressed: () {},
           ),
         ],
       ),

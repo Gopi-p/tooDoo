@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toodoo/shared.module/constants/global.dart';
 import 'package:toodoo/toodoo.app/Routes/app_router.dart';
 
 class TooDoo extends StatelessWidget {
@@ -9,6 +10,7 @@ class TooDoo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      title: APP_NAME,
       debugShowCheckedModeBanner: false,
       routerDelegate: _appRouter.delegate(),
       routeInformationParser: _appRouter.defaultRouteParser(),

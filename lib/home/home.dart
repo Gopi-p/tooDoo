@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toodoo/shared.module/widgets/badge.dart';
 import 'package:toodoo/shared.module/widgets/button.dart';
 
 class Home extends StatelessWidget {
@@ -19,6 +20,13 @@ class Home extends StatelessWidget {
           Button(
             icon: Icons.edit,
             text: "Edit",
+            onPressed: () {},
+          ),
+          const SizedBox(height: 10),
+          Badge(
+            text: "Medium",
+            type: BadgeType.label,
+            color: const Color(0xffFF6A6A),
             onPressed: () {},
           ),
         ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toodoo/shared.module/theme.dart';
 
 class Button extends StatelessWidget {
   final String text;
@@ -24,7 +25,7 @@ class Button extends StatelessWidget {
         borderRadius: BorderRadius.circular(40),
         splashColor: const Color(0xB075ACFF),
         highlightColor: const Color(0xB075ACFF),
-        splashFactory: InkRipple.splashFactory,
+        splashFactory: AppTheme.defaultSplashEffect,
         onTap: disabled ? null : onPressed,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 21, vertical: 10),
@@ -40,12 +41,8 @@ class Button extends StatelessWidget {
               if (icon != null) const SizedBox(width: 6),
               Text(
                 text,
-                style: TextStyle(
+                style: AppTheme.buttonStyle.copyWith(
                   color: disabled ? const Color(0xccffffff) : Colors.white,
-                  fontSize: 18,
-                  height: 1.6,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 0.36,
                 ),
               ),
             ],

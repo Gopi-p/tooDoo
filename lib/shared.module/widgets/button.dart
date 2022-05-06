@@ -6,6 +6,7 @@ class Button extends StatelessWidget {
   final VoidCallback? onPressed;
   final IconData? icon;
   final bool disabled;
+  final EdgeInsetsGeometry padding;
 
   const Button({
     Key? key,
@@ -13,6 +14,7 @@ class Button extends StatelessWidget {
     this.onPressed,
     this.icon,
     this.disabled = false,
+    this.padding = const EdgeInsets.symmetric(horizontal: 21, vertical: 10),
   }) : super(key: key);
 
   @override
@@ -28,7 +30,7 @@ class Button extends StatelessWidget {
         splashFactory: AppTheme.defaultSplashEffect,
         onTap: disabled ? null : onPressed,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 21, vertical: 10),
+          padding: padding,
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [

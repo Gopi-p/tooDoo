@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:toodoo/shared.module/enums.dart';
 import 'package:toodoo/shared.module/theme.dart';
 
-enum BadgeType { priority, label }
+export 'package:toodoo/shared.module/enums.dart' show BadgeType;
 
 class Badge extends StatelessWidget {
   final String text;

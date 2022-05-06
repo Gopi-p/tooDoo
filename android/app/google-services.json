@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "220926738739",
+    "project_id": "toodoo1",
+    "storage_bucket": "toodoo1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220926738739:android:5fd6728cfb5e9045433e46",
+        "android_client_info": {
+          "package_name": "com.gopicreation.toodoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "220926738739-tm328clqhvg67aivcbhsf1q7fcug7pd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-VC3PP60oY7fCiES3WT_qJtnPuJjfN5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "220926738739-tm328clqhvg67aivcbhsf1q7fcug7pd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
